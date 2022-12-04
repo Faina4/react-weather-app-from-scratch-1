@@ -16,13 +16,27 @@
   background-color: var(--background-primary-color)
 }
 
-
-
-
 .location-serch-wrapper{
   margin: 0 auto;  
   padding: 10px;
 }
 
+
+  .current-city-temterature img {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+  }
+  .current-city-temterature strong {
+    color: #212529;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 600;
+  }
+  .current-city-temterature .units {
+    position: relative;
+    font-size: 16px;
+    top: -10px;
+  }
 
 
