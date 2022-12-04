@@ -15,7 +15,7 @@ function App() {
    Current date
       <div className="location-serch-wrapper row g-3">       
       <div className="col-4 fs-1">
-        <CurrentCityName  />
+        <CurrentCityName />
       </div>
       <div className="col-8">
         <SearchForm />

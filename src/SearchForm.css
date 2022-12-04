@@ -11,3 +11,6 @@
   .form-parameters{
     height: 46px;
   }
+ li .CurrentForecast{
+list-style: none;
+  }
