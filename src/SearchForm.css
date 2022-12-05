@@ -14,3 +14,6 @@
  li .CurrentForecast{
 list-style: none;
   }
+  .CurrentForecast{
+    padding: 0;
+  }

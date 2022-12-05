@@ -18,11 +18,11 @@ function App() {
         <CurrentCityName />
       </div>
       <div className="col-8">
-        <SearchForm />
+      <SearchForm />
       </div>
 <div className="row ">
 <div className="col-3">   
-<CurrentCityForecast />  
+<CurrentCityForecast />
       </div>
 <div className="col-3 clearfix current-city-temterature">     
 <CurrentTemperature /> 
