@@ -5,27 +5,33 @@ import CurrentCityName from "./CurrentCityName";
 import SearchForm from "./SearchForm";
 import CurrentCityForecast from "./CurrentCityForecast"
 import CurrentDate from "./CurrentDate";
-import CurrentTemperature from "./CurrentTemperature";
+import CurrentDay from "./CurrentDay";
+//import CurrentTemperature from "./CurrentTemperature";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
       <header className="Weather-app">
-   <CurrentDate />
-      <div className="location-serch-wrapper row g-3">       
-      <div className="col-4 fs-1">
-        <CurrentCityName />
+
+      <div className="location-serch-wrapper row g-3"> 
+        
+      <div className="col-4">
+       <CurrentDate />      
+      <CurrentDay /> 
       </div>
       <div className="col-8">
-      <SearchForm />
+      <SearchForm defaultCity="Kyiv" />
       </div>
+    
+      <CurrentCityName  /> 
 <div className="row ">
+
 <div className="col-3">   
 <CurrentCityForecast />
       </div>
 <div className="col-3 clearfix current-city-temterature">     
-<CurrentTemperature /> 
+
       </div>
 <div className="col-3">      
       </div>

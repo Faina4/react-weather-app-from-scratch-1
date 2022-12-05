@@ -1,10 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import SearchForm from "./SearchForm";
+ import CurrentTemperature from "./CurrentTemperature";
 
 export default function CurrentCityName(){
    return (
-      <h1 className="fs-1" id="city">Kyiv  </h1>
      
+      <div className="row ">
+      <h1 className="col-3 fs-1">Kyiv</h1>
+      <div className="col-3"><CurrentTemperature />  </div>
+      
+      </div>
    )
 }

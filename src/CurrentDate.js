@@ -22,7 +22,7 @@ export default function CurrentDate() {
 
   return (
     <div className="CurrentDate">
-      {currentMonth} {currentDate}, {currentYear}{" "}
+     <strong> {currentMonth} {currentDate}, {currentYear}{" "}</strong>
     
     </div>
   );

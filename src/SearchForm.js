@@ -2,11 +2,12 @@ import React, {useState} from "react";
 import "./SearchForm.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios';
+import "./CurrentCityForecast";
 
 
 
-export default function SearchForm(){
-const [city, setCity]=useState("");
+export default function SearchForm(props){
+const [city, setCity]=useState(props.defaultCity);
 const [loaded, setLoaded]=useState(false);
 const [currentForecast, setCurrentForecast ]=useState({});
 
@@ -29,10 +30,7 @@ function searchCity(){
 }
 
 function handleSubmit(event){
-   //have to have access to the city
-   //make api call
-   //update whether UI
-   event.preventDefault();
+event.preventDefault();
 searchCity()
 }
 
@@ -58,25 +56,13 @@ function updateCity(event){      //eventListener
     </form>
   );
  
-if(loaded){
+
   return (
     <div>
       {form}
-      <br />
-      <ul className="CurrentForecast">
-      
-       <li> City: {currentForecast.cityName} </li>
-         <li> Temperature: {Math.round(currentForecast.temperature)} °C; </li>
-         <li> Description: {currentForecast.description} ; </li>
-         <li> Humidity: {currentForecast.humidity}  %; </li>
-         <li> Wind speed: {currentForecast.wind} km/h; </li>
-         <li> <img src={currentForecast.icon} alt="Weather Icon" /> </li>
-      
-        </ul>
+
+
     </div>
   );
 } 
-    else{
-      return form
-    }
-} 
+
