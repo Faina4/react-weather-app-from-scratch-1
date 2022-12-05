@@ -6,8 +6,8 @@ export default function CurrentCityName(){
    return (
      
       <div className="row ">
-      <h1 className="col-3 fs-1">Kyiv</h1>
-      <div className="col-3"><CurrentTemperature />  </div>
+      <h1 className="col-3 fs-1">Default city</h1>
+      <div className="col-3">  </div>
       
       </div>
    )

@@ -30,7 +30,7 @@ function App() {
 <div className="col-3">   
 <CurrentCityForecast />
       </div>
-<div className="col-3 clearfix current-city-temterature">     
+<div className="col-3 d-flex current-city-temterature">     
 
       </div>
 <div className="col-3">      

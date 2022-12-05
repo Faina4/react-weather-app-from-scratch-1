@@ -55,14 +55,33 @@ function updateCity(event){      //eventListener
      </input>
     </form>
   );
- 
-
-  return (
+  if(loaded){
+    return (
+      <div>
+        {form}
+        <br />
+        <ul className="CurrentForecast">
+  
+         <li> City: {currentForecast.cityName} </li>
+           <li> Temperature: {Math.round(currentForecast.temperature)} °C; </li>
+           <li> Description: {currentForecast.description} ; </li>
+           <li> Humidity: {currentForecast.humidity}  %; </li>
+           <li> Wind speed: {currentForecast.wind} km/h; </li>
+           <li> <img src={currentForecast.icon} alt="Weather Icon" /> </li>
+  
+          </ul>
+      </div>
+    );
+  } else{
+      return (
     <div>
       {form}
 
 
     </div>
   );
+  }
+
+
 } 
 
