@@ -16,7 +16,7 @@ export default function CurrentDay() {
   
     let currentHour = now.getHours();
     if (currentHour < 10) {
-      currentHour = `0 ${currentHour}`;
+      currentHour = `0${currentHour}`;
     }
     let currentMinutes = now.getMinutes();
     if (currentMinutes < 10) {
