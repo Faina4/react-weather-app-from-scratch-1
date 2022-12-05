@@ -4,7 +4,7 @@ import Footer from './Footer';
 import CurrentCityName from "./CurrentCityName";
 import SearchForm from "./SearchForm";
 import CurrentCityForecast from "./CurrentCityForecast"
-//import CurrentDate from "./CurrentDate";
+import CurrentDate from "./CurrentDate";
 import CurrentTemperature from "./CurrentTemperature";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="Weather-app">
-   Current date
+   <CurrentDate />
       <div className="location-serch-wrapper row g-3">       
       <div className="col-4 fs-1">
         <CurrentCityName />
